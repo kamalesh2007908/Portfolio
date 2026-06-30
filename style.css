@@ -748,45 +748,43 @@ body{
 
 /* Mobile */
 
+#menu-toggle{
+    display: none;
+}
+
+.menu-btn{
+    display: none;
+    font-size: 30px;
+    color: #00abf0;
+    cursor: pointer;
+}
+
 @media (max-width:768px){
 
-    .header{
-        flex-direction:column;
-        gap:20px;
+    .menu-btn{
+        display: block;
     }
 
     .navbar{
-        flex-wrap:wrap;
-        justify-content:center;
-        gap:15px;
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: rgba(8,27,41,.95);
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 20px 0;
     }
 
-    .home-content h1{
-        font-size:42px;
+    #menu-toggle:checked ~ .navbar{
+        display: flex;
     }
 
-    .home-content h3{
-        font-size:24px;
+    .btn{
+        display: none;
     }
-
-    .home-image img{
-        width:280px;
-    }
-
-    .about-image img{
-        width:280px;
-    }
-
-    .skills-container,
-    .projects-container,
-    .certificate-container{
-        grid-template-columns:1fr;
-    }
-
-    .section-title h2{
-        font-size:34px;
-    }
-
 }
 
 /* Small Mobile */
