@@ -8,6 +8,10 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
+
+    <script src="script.js"></script>
+
+    
     
 </head>
 
@@ -282,27 +286,28 @@
 
             <form action="#">
 
-                <input type="text"
+                <input type="text" id="name"
                        placeholder="Your Name"
                        required>
 
-                <input type="email"
+                <input type="email" id="email"
                        placeholder="Your Email"
                        required>
 
-                <input type="text"
+                <input type="text" id="subject"
                        placeholder="Subject"
                        required>
 
-                <textarea
+                <textarea id="message"
                     rows="6"
                     placeholder="Your Message"
                     required>
                 </textarea>
 
-                <button type="submit" class="btn">
+                <button type="submit" class="btn" onclick="return validateForm()">
                     Send Message
                 </button>
+                <p id="formMessage"></p>
 
             </form>
 
