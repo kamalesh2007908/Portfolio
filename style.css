@@ -310,7 +310,7 @@ body{
 .certificate-container{
     display:flex;
     justify-content:center;
-    allign-items:center
+    align-items:center;
 }
 
 .certificate-card{
